@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/xorm/DbRaw.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/views/components/ClientAccountDetailPanel.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/controllers/OpeartionController.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/xorm/dao/repository/AccountOperationDaoRepository.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/models/tableModel/AccountsTableModel.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/views/deigns/panels/AbstractClientOperationsPanel.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/models/entity/BankAccount.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/xorm/db.sql</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/views/core/AbstractTableWidget.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/views/components/ClientHistoriesPanel.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/xorm/dao/repository/BankAccountDaoRepository.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/views/deigns/panels/AbstractAccountListPanel.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/views/components/ClientAccountsListPanel.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/views/deigns/AbstractMainWindowFrame.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/xorm/dao/repository/BankUserDaoRepository.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/controllers/CreateAccountController.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/xorm/dao/AbstractDAO.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/views/deigns/panels/AbstractAccountDetailPanel.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/views/deigns/AbstractLoginWindow.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/utils/ObsActionEnum.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/models/entity/BankOperation.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/views/LoginFormWindow.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/views/components/ClientSoldeChartPanel.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/models/entity/AccountOperation.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/xorm/factory/DaoFactory.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/views/components/ClientAddNewAccountPanel.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/views/components/ClientOperationsPanel.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/views/MainWindow.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/views/deigns/panels/AbstractNewAccountPanel.java</file>
+            <file>file:/F:/Dossier_Maxime/JAVA/Netbeans/BanxClient/src/banxclient/views/core/table/AccountsTableWidget.java</file>
+        </group>
+    </open-files>
+</project-private>
