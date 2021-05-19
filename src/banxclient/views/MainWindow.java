@@ -163,6 +163,8 @@ public class MainWindow extends AbstractMainWindowFrame implements ObserverInter
                 }
             });
 
+        }else if (action == ObsActionEnum.UPDATE_USERNAME){
+            this.usernameLabel.setText((String) value);
         }
 
     }

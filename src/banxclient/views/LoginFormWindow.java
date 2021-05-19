@@ -7,9 +7,13 @@ package banxclient.views;
 
 import banxclient.controllers.LoginFormController;
 import banxclient.models.entity.BankUser;
+import banxclient.utils.ObsActionEnum;
+import banxclient.utils.ObservableInterface;
+import banxclient.utils.ObserverInterface;
 import banxclient.views.deigns.AbstractLoginWindow;
 import banxclient.xorm.factory.DaoFactory;
 import java.awt.event.ActionEvent;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -18,14 +22,16 @@ import javax.swing.JOptionPane;
  *
  * @author Software
  */
-public class LoginFormWindow extends AbstractLoginWindow {
+public class LoginFormWindow extends AbstractLoginWindow implements ObservableInterface {
 
     private final LoginFormController controller;
+    private ArrayList<ObserverInterface> observers;
 
     public LoginFormWindow(LoginFormController controller) {
         super();
 
         this.controller = controller;
+        this.observers = new ArrayList<>();
         
         setUp();
 
@@ -50,9 +56,21 @@ public class LoginFormWindow extends AbstractLoginWindow {
                         
                        
                         MainWindow.userAccount = DaoFactory.getBankAccountRepository().find(user);
+                        MainWindow.userAccount.setBankUserId(user.getId());
                         
                          //Get the user data here
                         MainWindow main = new MainWindow();
+                        LoginFormWindow.this.addObserver(main);
+                        
+                        
+                        
+                        System.out.println(MainWindow.userAccount.getBankUserId());
+                        
+                        
+                        LoginFormWindow.this.updateObervers(
+                                ObsActionEnum.UPDATE_USERNAME, 
+                                user.getFirstname() + " " + user.getLastname());
+                        
                         System.out.println("Account id " + MainWindow.userAccount.getBankUserId());
 
                         LoginFormWindow.this.dispose();
@@ -70,6 +88,23 @@ public class LoginFormWindow extends AbstractLoginWindow {
                 }
             });
         });
+    }
+
+    @Override
+    public void addObserver(ObserverInterface obs) {
+        this.observers.add(obs);
+    }
+
+    @Override
+    public void updateObervers(ObsActionEnum action, Object value) {
+        for(ObserverInterface obs: this.observers){
+            obs.update(action, value);
+        }
+    }
+
+    @Override
+    public void deleteObserver() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

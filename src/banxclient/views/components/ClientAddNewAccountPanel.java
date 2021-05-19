@@ -7,6 +7,7 @@ package banxclient.views.components;
 
 import banxclient.controllers.CreateAccountController;
 import banxclient.models.entity.BankAccount;
+import banxclient.views.MainWindow;
 import banxclient.views.deigns.panels.AbstractNewAccountPanel;
 import banxclient.xorm.factory.DaoFactory;
 import java.awt.event.ActionEvent;
@@ -36,6 +37,9 @@ public class ClientAddNewAccountPanel extends AbstractNewAccountPanel {
                             ClientAddNewAccountPanel.this.accountTypeComboBox.getSelectedItem().toString(),
                             ClientAddNewAccountPanel.this.amountTextField.getText(),
                             ClientAddNewAccountPanel.this.rateTextField.getText());
+                    
+                    //update account here
+                    account.setBankUserId(MainWindow.userAccount.getBankUserId());
                     
                     
                     //Call the repository to save

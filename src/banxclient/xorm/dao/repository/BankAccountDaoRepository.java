@@ -86,7 +86,7 @@ public class BankAccountDaoRepository extends AbstractDAO<BankAccount> {
         try {
             PreparedStatement stm = this.connect.prepareStatement(query);
 
-            stm.setString(1, obj.getNumber()); //Willl be generated from a service
+            stm.setString(1, obj.getNumber()); //Will be generated from a service
             stm.setString(2, obj.getCategory());
             stm.setInt(3, obj.getAmount());
             stm.setDouble(4, obj.getRate());

@@ -106,7 +106,7 @@ public class ClientAccountsListPanel extends AbstractAccountListPanel implements
         
         //Get all accounts count
         String query = "SELECT COUNT(*)as total_account FROM `bank_account`";
-        query += "WHERE bank_account.bank_user_id=1;";
+        query += "WHERE bank_account.bank_user_id=" + MainWindow.userAccount.getBankUserId() + "; ";
         
         
         try {
@@ -132,7 +132,8 @@ public class ClientAccountsListPanel extends AbstractAccountListPanel implements
         query += "INNER JOIN `bank_user` ";
         query += "ON bank_account.bank_user_id=bank_user.id ";
         query += "WHERE " ;
-        query += "bank_user.id=1 AND account_operation.amount_af > account_operation.amount_bf;";
+        query += "bank_user.id=" + MainWindow.userAccount.getBankUserId() + " ";
+        query += "AND account_operation.amount_af > account_operation.amount_bf;";
         
         
         try {
@@ -157,7 +158,8 @@ public class ClientAccountsListPanel extends AbstractAccountListPanel implements
         query += "INNER JOIN `bank_user` ";
         query += "ON bank_account.bank_user_id=bank_user.id ";
         query += "WHERE " ;
-        query += "bank_user.id=1 AND account_operation.amount_af < account_operation.amount_bf;";
+        query += "bank_user.id="  + MainWindow.userAccount.getBankUserId() + " "; 
+        query += "AND account_operation.amount_af < account_operation.amount_bf;";
         
         
         try {

@@ -17,5 +17,6 @@ public enum ObsActionEnum {
     
     VIEW_SWITCH_TO_SINGLE_ACCOUNT_VIEW,
     
-    UPDATE_AMOUNT;
+    UPDATE_AMOUNT,
+    UPDATE_USERNAME;
 }
